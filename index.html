@@ -142,7 +142,7 @@
 
             var gui = new dat.GUI();
             var guiObj = {Boxiness: 1.0};
-            gui.add(guiObj, 'Boxiness').min(0.0).max(1.0).step(0.1).onFinishChange(function(newRatio){
+            gui.add(guiObj, 'Boxiness').min(0.0).max(1.0).step(0.1).onChange(function(newRatio){
                 morphVertices(newRatio);
                 
             });
